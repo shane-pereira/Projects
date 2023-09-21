@@ -54,6 +54,7 @@ function autoPlay() {
 }
 
 function playGame(playerMove) {
+  resetMoveDisplay();
   let result = '';
   const computerMove = pickComputerMove();
 
@@ -101,10 +102,7 @@ function playGame(playerMove) {
 
   document.querySelector('.js-result').innerHTML = result;
 
-  document.querySelector('.js-move').innerHTML
-    = `You <img src="images/${playerMove}-emoji.png" class="move-icon"> 
-    <img src="images/${computerMove}-emoji.png" class="move-icon">
-    Computer`;
+  displayCurrentMove(playerMove,computerMove);
 }
 
 function pickComputerMove() {
@@ -123,4 +121,18 @@ function pickComputerMove() {
 function updateScoreElement() {
   document.querySelector('.js-score').innerHTML =
     `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+}
+
+function displayCurrentMove (playerMove,computerMove) {
+  const currentMove = document.createElement('p');
+  currentMove.innerHTML
+    = `You <img src="images/${playerMove}-emoji.png" class="move-icon"> 
+    <img src="images/${computerMove}-emoji.png" class="move-icon">
+    Computer`;
+
+  document.querySelector('.js-result').appendChild(currentMove);
+}
+
+function resetMoveDisplay() {
+  document.querySelector('.js-result').innerHTML = '';
 }
