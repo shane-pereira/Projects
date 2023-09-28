@@ -11,7 +11,7 @@ const game = {
   moveCount: 0
 }
 
-const score = JSON.parse(localStorage.getItem('score')) || {
+const score =  {
   x: {
     wins: 0,
     losses: 0
