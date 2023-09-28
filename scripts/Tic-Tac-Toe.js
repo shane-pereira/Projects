@@ -24,7 +24,8 @@ const score = JSON.parse(localStorage.getItem('score')) ||  {
   empty: true
 }
 
-displayScore(false);
+if (!score.empty)
+  displayScore(false);
 
 const winConditions = [
   [0, 1, 2],
