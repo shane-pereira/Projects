@@ -11,7 +11,7 @@ const game = {
   moveCount: 0
 }
 
-const score =  {
+const score = JSON.parse(localStorage.getItem('score')) ||  {
   x: {
     wins: 0,
     losses: 0
@@ -24,8 +24,7 @@ const score =  {
   empty: true
 }
 
-if (!score.empty)
-  displayScore(false);
+displayScore(false);
 
 const winConditions = [
   [0, 1, 2],
