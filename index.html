@@ -13,7 +13,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
-
+ <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-2B09D8E5QB"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'G-2B09D8E5QB');
+</script>
 </head>
 
 <body>
@@ -113,6 +121,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="https://awful-addax-qzmof.instawp.xyz/">
     <p>Link to Awful Addax</p>
   </a>
+
+ <script>
+  window.addEventListener('load', function() {
+    document.querySelectorAll('[href="https://github.com/shane-pereira"]').forEach(function(t) {
+      t.onclick = function() {
+        gtag("event", "GHprofile",
+      }
+    })
+ })
+
+</script>
+
 
 </body>
 
