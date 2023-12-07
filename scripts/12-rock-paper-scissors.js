@@ -150,5 +150,5 @@ function runGTM() {
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-K5DLHF6V');
 }
-  <!-- Google Tag Manager - Header-->
-  <!-- End Google Tag Manager Header Code-->
+  // <!-- Google Tag Manager - Header-->
+  // <!-- End Google Tag Manager Header Code-->
