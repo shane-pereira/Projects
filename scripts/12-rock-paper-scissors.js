@@ -1,4 +1,3 @@
-window.onload= function() {
   // Implementing GTM on page Load
   <!-- Google Tag Manager - Header-->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -12,7 +11,8 @@ window.onload= function() {
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5DLHF6V"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  }
+
+    // End of GTM Code
 
 let score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
