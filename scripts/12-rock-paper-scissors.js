@@ -1,3 +1,7 @@
+window.onload= function() {
+  alert('test');
+}
+
 let score = JSON.parse(localStorage.getItem('score')) || {
   wins: 0,
   losses: 0,
