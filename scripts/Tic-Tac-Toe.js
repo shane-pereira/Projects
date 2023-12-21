@@ -11,7 +11,7 @@ const game = {
   moveCount: 0
 }
 
-const score = JSON.parse(localStorage.getItem('score')) ||  {
+const score = JSON.parse(localStorage.getItem('tictactoescore')) ||  {
   x: {
     wins: 0,
     losses: 0
@@ -192,5 +192,5 @@ function updateScore(result) {
     score.empty = true;
     displayScore(true);
   }
-  localStorage.setItem('score', JSON.stringify(score));
+  localStorage.setItem('tictactoescore', JSON.stringify(score));
 }
