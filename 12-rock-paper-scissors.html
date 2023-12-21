@@ -4,21 +4,10 @@
 <head>
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="styles/12-rock-paper-scissors.css">
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T5WHFDC2');</script>
-<!-- End Google Tag Manager -->
 </head>
 
   
 <body>
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5WHFDC2"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   
   <p class="title">Rock Paper Scissors</p>
 
@@ -45,8 +34,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     updateScoreElement();
     document.querySelector('.js-result').innerHTML = '';
     document.querySelector('.js-move').innerHTML = ''
-    localStorage.removeItem('score');
-  " class="reset-score-button">
+    localStorage.removeItem('score');" 
+    class="reset-score-button">
     Reset Score
   </button>
 
@@ -55,8 +44,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   ">Auto Play</button>
 
   <script src="scripts/12-rock-paper-scissors.js"></script>
-
-  <button class="js-contact-me" >Contact me on: +91-9833654897</button>
 
   <footer><a href="./index.html">Home</a> <a href="./projects.html">Projects</a></footer>
 </body>
